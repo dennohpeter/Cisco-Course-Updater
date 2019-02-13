@@ -1,0 +1,5410 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+jaymoh@jaym0h-hp-notebook:~/Desktop/Projects/webscrapping/cisco$ python cisco.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		 <!DOCTYPE html>
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+		
+	
+	
+	
+	
+	
+	
+		
+		
+		
+	
+	
+		
+	
+	
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var envURL = 'https://www.netacad.com';
+</script>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en-US" ng-app="netAcadApp" ng-controller="pageController" ng-init="init(true, 'en_US')" ng-class="$root.selectedLanguage=='ar'? 'rtl':'ltr'">
+<head>
+<script>
+dataLayer = [];
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P253W44');</script>
+<!-- End Google Tag Manager -->
+	<meta name="fragment" content="!">
+    <title ng-bind="metadata.title">Cisco Networking Academy</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf8"/>
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=0">
+    <meta name="country" content="{{countryCode}}"/>
+	<meta name="language" content="{{langShort}}"/>
+    <meta name="accesslevel" content="Guest, Customer, Partner"/>
+    <meta name="date" content="{{date | date:'EEE MMM dd HH-mm-ss yyyy'}}"/>
+    <meta name="docType" content=""/>
+	<meta name="title" content="{{metadata.title}}"/>
+    <meta name="description" content="{{metadata.description}}"/>
+	<meta name="keywords" content="{{metadata.keywords}}"/>
+	<meta property="og:title" content="{{metadata.title}}"/>
+	<meta property="og:description" content="{{metadata.description}}"/>
+	<link rel="shortcut icon" href="https://www.netacad.com/netacad-public-theme/images/favicon.ico" type="image/x-icon"/>
+
+        <!--[if lt IE 9]>
+    <script src="https://www.netacad.com/netacad-public-theme/js/assets/html5shiv.min.js"></script>
+    <script src="https://www.netacad.com/netacad-public-theme/js/assets/respond.min.js"></script>
+    <![endif]-->
+	    <script>window['adrum-start-time']=new Date().getTime();</script>
+    <script src="/js/adrum.js"></script>
+	<script type="text/javascript" src="https://www.netacad.com/static-resources/js/angular.min.js?t=190130204612.1" charset="utf-8"></script>
+	<script type="text/javascript" src="https://www.netacad.com/static-resources/js/angular-route.min.js?t=190130204612.1" charset="utf-8"></script>
+    <script type="text/javascript" src="https://www.netacad.com/static-resources/js/jquery-2.2.3.min.js?t=190130204612.1" charset="utf-8"></script>
+
+	<script type="text/javascript" src="https://www.netacad.com/netacad-public-theme/js/assets.min.js?t=190130204612.1" charset="utf-8"></script>
+        <script type="text/javascript" src="https://www.netacad.com/netacad-public-theme/js/netspace.min.js?t=190130204612.1" charset="utf-8"></script>
+
+    <link href="https://www.netacad.com/netacad-public-theme/css/netspace.min.css?browserId=other&amp;themeId=netacadpublictheme_WAR_netacadpublictheme&amp;minifierType=css&amp;?t=190130204612.1&amp;languageId=en_US&amp;b=6210&amp;t=1548971676000" rel="stylesheet" type="text/css"/>
+
+		<meta name="google-site-verification" content="cjPH9ZAZ91n8NJAKa7PAu7KkR8NU2iS5BK3FGt06OI8" />
+
+		<meta name="msvalidate.01" content="E92E7806156B3C869F3B8E2FBF802972" />
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+<link href="https://www.netacad.com/netacad-public-theme/images/favicon.ico" rel="Shortcut Icon" />
+
+
+
+
+
+        
+
+
+
+
+
+<link class="lfr-css-file" href="https&#x3a;&#x2f;&#x2f;www&#x2e;netacad&#x2e;com&#x2f;netacad-public-theme&#x2f;css&#x2f;aui&#x2e;css&#x3f;browserId&#x3d;other&#x26;themeId&#x3d;netacadpublictheme_WAR_netacadpublictheme&#x26;minifierType&#x3d;css&#x26;languageId&#x3d;en_US&#x26;b&#x3d;6210&#x26;t&#x3d;1548971676000" rel="stylesheet" type="text/css" />
+
+<link href="&#x2f;html&#x2f;css&#x2f;main&#x2e;css&#x3f;browserId&#x3d;other&#x26;themeId&#x3d;netacadpublictheme_WAR_netacadpublictheme&#x26;minifierType&#x3d;css&#x26;languageId&#x3d;en_US&#x26;b&#x3d;6210&#x26;t&#x3d;1425151967000" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				<link href="https://www.netacad.com/html/portlet/login/css/main.css?browserId=other&amp;themeId=netacadpublictheme_WAR_netacadpublictheme&amp;minifierType=css&amp;languageId=en_US&amp;b=6210&amp;t=1549960951000" rel="stylesheet" type="text/css" />
+
+	
+
+				<link href="https://www.netacad.com/netacad-notifications-portlet/css/main.css?browserId=other&amp;themeId=netacadpublictheme_WAR_netacadpublictheme&amp;minifierType=css&amp;languageId=en_US&amp;b=6210&amp;t=1549960728000" rel="stylesheet" type="text/css" />
+
+	
+
+				<link href="https://www.netacad.com/help-portlet/css/main.css?browserId=other&amp;themeId=netacadpublictheme_WAR_netacadpublictheme&amp;minifierType=css&amp;languageId=en_US&amp;b=6210&amp;t=1549960759000" rel="stylesheet" type="text/css" />
+
+	
+
+
+
+
+
+<script type="text/javascript">
+	// <![CDATA[
+		var Liferay = {
+			Browser: {
+				acceptsGzip: function() {
+					return true;
+				},
+				getMajorVersion: function() {
+					return 72.0;
+				},
+				getRevision: function() {
+					return "537.36";
+				},
+				getVersion: function() {
+					return "72.0";
+				},
+				isAir: function() {
+					return false;
+				},
+				isChrome: function() {
+					return true;
+				},
+				isFirefox: function() {
+					return false;
+				},
+				isGecko: function() {
+					return true;
+				},
+				isIe: function() {
+					return false;
+				},
+				isIphone: function() {
+					return false;
+				},
+				isLinux: function() {
+					return true;
+				},
+				isMac: function() {
+					return false;
+				},
+				isMobile: function() {
+					return false;
+				},
+				isMozilla: function() {
+					return false;
+				},
+				isOpera: function() {
+					return false;
+				},
+				isRtf: function() {
+					return true;
+				},
+				isSafari: function() {
+					return true;
+				},
+				isSun: function() {
+					return false;
+				},
+				isWap: function() {
+					return false;
+				},
+				isWapXhtml: function() {
+					return false;
+				},
+				isWebKit: function() {
+					return true;
+				},
+				isWindows: function() {
+					return false;
+				},
+				isWml: function() {
+					return false;
+				}
+			},
+
+			Data: {
+				NAV_SELECTOR: '#navigation',
+
+				isCustomizationView: function() {
+					return false;
+				},
+
+				notices: [
+					null
+
+					
+
+					
+				]
+			},
+
+			ThemeDisplay: {
+				
+					getLayoutId: function() {
+						return "444";
+					},
+					getLayoutURL: function() {
+						return "https://www.netacad.com/login";
+					},
+					getParentLayoutId: function() {
+						return "0";
+					},
+					isPrivateLayout: function() {
+						return "false";
+					},
+					isVirtualLayout: function() {
+						return false;
+					},
+				
+
+				getBCP47LanguageId: function() {
+					return "en-US";
+				},
+				getCDNBaseURL: function() {
+					return "https://www.netacad.com";
+				},
+				getCDNDynamicResourcesHost: function() {
+					return "";
+				},
+				getCDNHost: function() {
+					return "";
+				},
+				getCompanyId: function() {
+					return "20002";
+				},
+				getCompanyGroupId: function() {
+					return "20040";
+				},
+				getDefaultLanguageId: function() {
+					return "en_US";
+				},
+				getDoAsUserIdEncoded: function() {
+					return "";
+				},
+				getLanguageId: function() {
+					return "en_US";
+				},
+				getParentGroupId: function() {
+					return "20028";
+				},
+				getPathContext: function() {
+					return "";
+				},
+				getPathImage: function() {
+					return "/image";
+				},
+				getPathJavaScript: function() {
+					return "/html/js";
+				},
+				getPathMain: function() {
+					return "/c";
+				},
+				getPathThemeImages: function() {
+					return "https://www.netacad.com/netacad-public-theme/images";
+				},
+				getPathThemeRoot: function() {
+					return "/netacad-public-theme";
+				},
+				getPlid: function() {
+					return "32887539";
+				},
+				getPortalURL: function() {
+					return "https://www.netacad.com";
+				},
+				getPortletSetupShowBordersDefault: function() {
+					return true;
+				},
+				getScopeGroupId: function() {
+					return "20028";
+				},
+				getScopeGroupIdOrLiveGroupId: function() {
+					return "20028";
+				},
+				getSessionId: function() {
+					
+						
+						
+							return "";
+						
+					
+				},
+				getSiteGroupId: function() {
+					return "20028";
+				},
+				getURLControlPanel: function() {
+					return "/group/control_panel?refererPlid=32887539";
+				},
+				getURLHome: function() {
+					return "https\x3a\x2f\x2fwww\x2enetacad\x2ecom\x2fweb\x2fguest\x2fhome";
+				},
+				getUserId: function() {
+					return "20006";
+				},
+				getUserName: function() {
+					
+						
+						
+							return "";
+						
+					
+				},
+				isAddSessionIdToURL: function() {
+					return false;
+				},
+				isFreeformLayout: function() {
+					return false;
+				},
+				isImpersonated: function() {
+					return false;
+				},
+				isSignedIn: function() {
+					return false;
+				},
+				isStateExclusive: function() {
+					return false;
+				},
+				isStateMaximized: function() {
+					return false;
+				},
+				isStatePopUp: function() {
+					return false;
+				}
+			},
+
+			PropsValues: {
+				NTLM_AUTH_ENABLED: false
+			}
+		};
+
+		var themeDisplay = Liferay.ThemeDisplay;
+
+		
+
+		Liferay.AUI = {
+			getAvailableLangPath: function() {
+				return 'available_languages.jsp?browserId=other&themeId=netacadpublictheme_WAR_netacadpublictheme&colorSchemeId=01&minifierType=js&languageId=en_US&b=6210&t=1549960884000';
+			},
+			getCombine: function() {
+				return true;
+			},
+			getComboPath: function() {
+				return '/combo/?browserId=other&minifierType=&languageId=en_US&b=6210&t=1549960884000&';
+			},
+			getFilter: function() {
+				
+					
+						return 'min';
+					
+					
+					
+				
+			},
+			getJavaScriptRootPath: function() {
+				return '/html/js';
+			},
+			getLangPath: function() {
+				return 'aui_lang.jsp?browserId=other&themeId=netacadpublictheme_WAR_netacadpublictheme&colorSchemeId=01&minifierType=js&languageId=en_US&b=6210&t=1549960884000';
+			}
+		};
+
+		Liferay.authToken = 'j76i1PGp';
+
+		
+
+		Liferay.currentURL = '\x2flogin\x2f';
+		Liferay.currentURLEncoded = '%2Flogin%2F';
+	// ]]>
+</script>
+
+
+
+	
+		
+			
+				<script src="/html/js/barebone.jsp?browserId=other&amp;themeId=netacadpublictheme_WAR_netacadpublictheme&amp;colorSchemeId=01&amp;minifierType=js&amp;minifierBundleId=javascript.netacad.barebone.files&amp;languageId=en_US&amp;b=6210&amp;t=1549960884000" type="text/javascript"></script>
+			
+			
+		
+	
+	
+
+
+<script type="text/javascript">
+	// <![CDATA[
+		
+
+			
+
+			
+				Liferay.Portlet.list = ['58', 'notifications_WAR_netacadnotificationsportlet', 'help_WAR_helpportlet', '58_INSTANCE_fm'];
+			
+		
+
+		
+
+		
+	// ]]>
+</script>
+
+
+
+
+
+	
+		
+
+			
+
+			
+			
+			
+			
+						
+		
+		
+	
+
+
+
+	
+		
+		
+
+			
+
+			
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+<link class="lfr-css-file" href="https&#x3a;&#x2f;&#x2f;www&#x2e;netacad&#x2e;com&#x2f;netacad-public-theme&#x2f;css&#x2f;main&#x2e;css&#x3f;browserId&#x3d;other&#x26;themeId&#x3d;netacadpublictheme_WAR_netacadpublictheme&#x26;minifierType&#x3d;css&#x26;languageId&#x3d;en_US&#x26;b&#x3d;6210&#x26;t&#x3d;1548971676000" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+
+        <style type="text/css">
+
+                
+
+                        
+
+                
+
+                        
+
+                
+
+                        
+
+                
+
+                        
+
+                
+
+                        
+
+                
+
+                        
+
+                
+
+                        
+
+                
+
+                        
+
+                
+
+        </style>
+
+
+
+
+
+	
+		    <script type="text/javascript">
+	        		    (function() {
+		        var didInit = false;
+		        function initMunchkin() {
+			        if(didInit === false) {
+			        	console.log("Marketo munchkin is enabled");
+			            didInit = true;
+			            Munchkin.init('059-VFZ-834');
+			        }
+		     	}
+		        var s = document.createElement('script');
+		        s.type = 'text/javascript';
+		        s.async = true;
+		        s.src = '//munchkin.marketo.net/munchkin.js';
+		        s.onreadystatechange = function() {
+		            if (this.readyState == 'complete' || this.readyState == 'loaded') {
+		                initMunchkin();
+		            }
+		        };
+		        s.onload = initMunchkin;
+		        document.getElementsByTagName('head')[0].appendChild(s);
+		    })();
+	    </script>
+	
+</head>
+<body role="document">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P253W44"
+height="0" width="0" title="Google tag manager" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="text-center goToMainContentParent">
+    <a id="goToMainContentLink" href="javascript:void(0)" class="btn btn-primary" target="_self" tabindex="0">Go to Main Content</a>
+</div>
+<input id="forgot_screen_name_url" class="hidden" type="hidden" value="https://www.netacad.com/login?p_auth=j76i1PGp&p_p_auth=KpRiMfTr&p_p_id=resendscreenname_WAR_resendscreennameportlet&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&_resendscreenname_WAR_resendscreennameportlet_javax.portlet.action=resendScreenName" />
+<input id="forgot_password_url" class="hidden" type="hidden"  value="https://www.netacad.com/login?p_auth=j76i1PGp&p_p_id=58&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&_58_struts_action=%2Flogin%2Fforgot_password" />
+<input id="self_enroll_url" class="hidden" type="hidden" value="https://www.netacad.com/login?p_auth=j76i1PGp&p_p_auth=TZ1n8x1K&p_p_id=selfenroll_WAR_selfenrollportlet&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&_selfenroll_WAR_selfenrollportlet_javax.portlet.action=selfEnroll" />
+
+<span id="build_time_stamp" class="hidden">190130204612.1</span>
+
+<input id="image_path_url" class="hidden" type="hidden"  value="/prod/images/" />
+<input id="json_path_url" class="hidden" type="hidden" value="/prod/resources/json/" />
+<input id="is_netacad_advantage" class="hidden" type="hidden" value="$theme.getSetting('is-netacad-advantage')" />
+
+<input id="pre_login_base_url" class="hidden" type="hidden" value="https://www.netacad.com/" />
+<script>
+	// We want to redirect to a special page based on the parameters used when loading the home page.
+	// This cannot be done in Angular, since we cannot route based on query parameters.
+	function getQueryStringArray(){
+	    var result=[];
+	    var params = window.location.search.substring(1).split('&');
+	    for(var j = 0; j < params.length; j++) {
+	       var param = params[j].split('=');
+	       result[param[0]] = param[1];
+	    }
+	    return result;
+	}
+
+	var queryParams = getQueryStringArray();
+	if (queryParams.p_p_id && queryParams.p_p_id === 'netacaduserprofile_WAR_netacaduserprofileportlet') {
+			window.location.href = '/edit-user-profile'
+	}
+
+</script>
+
+<input type="hidden" class="hidden" id="cdnHttpDiv" value="" />
+<input type="hidden" class="hidden" id="cdnHttpsDiv" value="" />
+<script>
+	// Read properties from Liferay for CDN. If the CDN is enabled, load the images from it. If both are set, https will be used.
+
+	(function initCDN(){
+
+		var cdnHttp = $('#cdnHttpDiv').val();
+		if(cdnHttp == "" || cdnHttp == '') {
+			cdnHttp = null;
+		}
+
+		var cdnHttps = $('#cdnHttpsDiv').val();
+		if(cdnHttps == "" || cdnHttps == '') {
+			cdnHttps = null;
+		}
+
+		this.cdn =
+			{
+				"http" : cdnHttp,
+				"https" : cdnHttps
+			}
+	})();
+
+	// Read Locator's SAML Entity ID (which is environment specific) from portal-ext.properties.
+	this.locatorSAMLEntityId = 'https://locator.netacad.com/simplesaml/module.php/saml/sp/metadata.php/locator-sp';
+	this.locatorHost = 'locator.netacad.com';
+
+	function createLocatorIframeSrc(type, isSignedIn, language, location, node) {
+				var src = "";
+				if (node) {
+					src = '//' + locatorHost + '/node/' + node + '/?lang=' + language + '&isdirect=true';
+				} else {
+					src = '//' + locatorHost + '/locator/' + type + '/?lang=' + language;
+					if (location) {
+						src = src + '&circle_op=<&circle[value]=40000&circle[location]=' + location;
+					}
+				}
+    		if (isSignedIn == 'true') {
+    			var liferaySAMLURL = '/c/portal/saml/sso?entityId=' + locatorSAMLEntityId;
+    			src = src.replace('//' + locatorHost, '');
+    			src = liferaySAMLURL + '&RelayState=' + encodeURIComponent(src);
+    		}
+
+    		return src;
+    }
+
+</script>
+<div class="container-fluid container-max-width">
+			<div class="hidden">
+			<span data-ng-init="isSignedIn='false'"></span>
+		</div>
+	    <div class="hidden">
+      <span data-ng-init="backEndLang='en_US'" id="backEndLang">en_US</span>
+      <span data-ng-init="backEndDefaultLang='en_US'" id="backEndDefaultLang">en_US</span>
+    </div>
+        
+    		<div class="edit-content">
+									</div>
+     		<span ng-if="enabledHeaderNavigation">
+    		<ng-include src="'/netacad-public-theme/js/app/shared/templates/navigation.html?t=190130204612.1'"></ng-include>
+		</span>
+  </div>
+
+<div class="container-fluid container-max-width">
+    <div class="row" id="maincontent">
+        	<div id="content" class="softhidden">
+   				    				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="columns-2" id="main-content" role="main">
+	<div class="portlet-layout row-fluid">
+		<div class="portlet-column portlet-column-first span4" id="column-1">
+			<div class="portlet-dropzone portlet-column-content portlet-column-content-first" id="layout-column_column-1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_58_  portlet-static portlet-static-end portlet-login " id="p_p_id_58_" >
+		<span id="p_58"></span>
+
+
+
+	
+	
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+
+		
+
+		
+			
+				
+
+<section class="portlet" id="portlet_58">
+	<header class="portlet-topper">
+		<h2>
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+		<span class=""
+			
+				onmouseover="Liferay.Portal.ToolTip.show(this, 'Sign\x20In')"
+			
+		>
+			
+				
+				
+					
+	
+		
+		
+			
+				
+					
+						
+							<img id="suxb_column1_0" src="https://www.netacad.com/netacad-public-theme/images/spacer.png"  alt="" style="background-image: url('https://www.netacad.com/sprite/html/icons/_sprite.png'); background-position: 50% -592px; background-repeat: no-repeat; height: 16px; width: 16px;" />
+						
+						
+					
+				
+				
+			
+		
+	
+
+	
+		
+		
+			<span class="taglib-text hide-accessible">Sign In</span>
+		
+	
+
+				
+			
+		</span>
+	
+
+
+
+
+
+		</h1>
+
+		<menu class="portlet-topper-toolbar" id="portlet-topper-toolbar_58" type="toolbar">
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+	
+
+					</menu>
+	</header>
+
+	<div class="portlet-content">
+		
+					<div class=" portlet-content-container" style="">
+						
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
+
+				
+					
+					
+						
+
+
+	
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+		
+
+		
+			
+		
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form action="https://www.netacad.com/login?p_p_id=58&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;p_p_col_id=column-1&amp;p_p_col_count=1&amp;_58_struts_action=%2Flogin%2Flogin" class="form sign-in-form "  id="_58_fm" method="post" name="_58_fm" autocomplete="on" >
+	
+
+	<input name="_58_formDate" type="hidden" value="1550022638878" />
+			
+
+			
+				
+				
+			
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<fieldset class="fieldset "  >
+	
+
+	<div class="">
+
+				
+
+				
+
+				<span id="_58_passwordCapsLockSpan" style="display: none;">Caps Lock is on.</span>
+
+				
+			</div></fieldset>
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="button-holder "  >
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button class="btn  btn-primary"    type='submit'  >
+	
+
+	Sign In
+
+	
+</button>
+
+
+			</div>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+</form>
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="navigation">
+		<ul class="taglib-icon-list unstyled">
+
+		
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<li class="" role="presentation">
+			
+				
+					<a href="https&#x3a;&#x2f;&#x2f;www&#x2e;netacad&#x2e;com&#x2f;login&#x3f;p_p_id&#x3d;58&#x26;p_p_lifecycle&#x3d;0&#x26;p_p_state&#x3d;normal&#x26;p_p_mode&#x3d;view&#x26;p_p_col_id&#x3d;column-1&#x26;p_p_col_count&#x3d;1&#x26;_58_struts_action&#x3d;&#x25;2Flogin&#x25;2Fforgot_password" class=" taglib-icon" id="_58_rjus_column1_0" role="menuitem" >
+						
+	
+		
+		
+			
+				
+					
+						
+							<img id="rjus_column1_0" src="https://www.netacad.com/netacad-public-theme/images/spacer.png"  alt="" style="background-image: url('https://www.netacad.com/netacad-public-theme/sprite/images/common/_sprite.png'); background-position: 50% -785px; background-repeat: no-repeat; height: 16px; width: 16px;" />
+						
+						
+					
+				
+				
+			
+		
+	
+
+	
+		
+		
+			<span class="taglib-text ">Forgot Password</span>
+		
+	
+
+					</a>
+				
+				
+			
+		</li>
+	
+	
+	
+
+
+
+
+
+	
+
+
+
+		
+            	
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<li class="" role="presentation">
+			
+				
+					<a href="https&#x3a;&#x2f;&#x2f;www&#x2e;netacad&#x2e;com&#x2f;forgot-screen-name" class=" taglib-icon" id="_58_ctvk_column1_0" role="menuitem" >
+						
+	
+		
+		
+			
+				
+					
+						
+							<img id="ctvk_column1_0" src="https://www.netacad.com/netacad-public-theme/images/spacer.png"  alt="" style="background-image: url('https://www.netacad.com/netacad-public-theme/sprite/images/common/_sprite.png'); background-position: 50% -785px; background-repeat: no-repeat; height: 16px; width: 16px;" />
+						
+						
+					
+				
+				
+			
+		
+	
+
+	
+		
+		
+			<span class="taglib-text ">Forgot Screen Name</span>
+		
+	
+
+					</a>
+				
+				
+			
+		</li>
+	
+	
+	
+
+
+
+
+
+	
+
+			
+		
+	</ul>
+	</div>
+
+
+
+
+		
+		
+		
+            <script type="text/javascript">
+                var fm = document.getElementById('_58_fm');
+                fm.onsubmit = function() {
+                    document.cookie = "isExpress=true";
+                }
+            </script>
+        
+	
+
+
+<style>
+	.portlet-login .alert {
+	    background: none;
+	    border: medium none;
+	    margin-bottom: 5px;
+	    padding: 1px;
+	}
+</style>
+	
+
+					
+				
+			
+		
+	
+	
+
+
+
+	</div>
+
+					</div>
+				
+	</div>
+</section>
+			
+			
+		
+	
+
+
+	
+
+
+
+
+
+		
+	</div>
+
+
+
+
+</div>
+		</div>
+
+		<div class="portlet-column portlet-column-last span8" id="column-2">
+			<div class="portlet-dropzone empty portlet-column-content portlet-column-content-last" id="layout-column_column-2"></div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+	
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_jabberutility_WAR_jabberutilityportlet_  portlet-static portlet-static-end  " id="p_p_id_jabberutility_WAR_jabberutilityportlet_" >
+		<span id="p_jabberutility_WAR_jabberutilityportlet"></span>
+
+
+
+	
+	
+	
+
+		
+
+			
+				
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+				
+			
+
+		
+
+	
+
+
+
+
+
+		
+	</div>
+
+
+
+
+
+
+	
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_8_WAR_soportlet_  portlet-static portlet-static-end so-portlet-user-bar " id="p_p_id_8_WAR_soportlet_" >
+		<span id="p_8_WAR_soportlet"></span>
+
+
+
+	
+	
+	
+
+		
+
+			
+				
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
+			
+
+		
+
+	
+
+
+
+
+
+		
+	</div>
+
+
+
+
+
+
+	
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_1_WAR_samlportlet_  portlet-static portlet-static-end  " id="p_p_id_1_WAR_samlportlet_" >
+		<span id="p_1_WAR_samlportlet"></span>
+
+
+
+	
+	
+	
+
+		
+
+			
+				
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
+			
+
+		
+
+	
+
+
+
+
+
+		
+	</div>
+
+
+
+
+
+
+	
+
+
+
+
+
+<form action="#" id="hrefFm" method="post" name="hrefFm">
+	<span></span>
+</form>
+   				  	  	</div>
+			<div data-ng-view="" autoscroll="true"></div>
+
+													<div aria-hidden="true" aria-labelledby="loginmodal" class="modal fade" id="loginmodal" ng-controller="loginController" role="dialog" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button aria-hidden="true" aria-label="Close" class="close" data-dismiss="modal" type="button"></button>
+        <h4 class="modal-title" id="myModalLabel">{{$root.loginData.title}}</h4>
+      </div>
+
+      <div class="modal-body">
+        <div id="modal-login" ng-show="$root.modalWindow=='login'">
+                    <form action="/en/web/guest/home?p_p_id=58_INSTANCE_fm&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&_58_INSTANCE_fm_struts_action=%2Flogin%2Flogin" autocomplete="on" class="form sign-in-form portlet-body" id="loginFormModal" method="post">
+            <input name="_58_INSTANCE_fm_formDate" type="hidden" value="1443178873110">
+            <input class="field" id="_58_INSTANCE_fm_saveLastPath" name="_58_INSTANCE_fm_saveLastPath" type="hidden" value="false">
+            <input class="field" id="_58_INSTANCE_fm_redirect" name="_58_INSTANCE_fm_redirect" type="hidden" value="">
+            <input class="field" id="_58_INSTANCE_fm_doActionAfterLogin" name="_58_INSTANCE_fm_doActionAfterLogin" type="hidden" value="false">
+            <fieldset class="fieldset ">
+              <div class="">
+                <div class="control-group">
+                  <div class="softhidden" id="loginError">{{loginData.error}}</div>
+                  <label class="control-label" for="_58_INSTANCE_fm_login">
+                    {{loginData.label_user}}
+                  </label>
+                  <input class="field clearable" id="_58_INSTANCE_fm_login" name="_58_INSTANCE_fm_login" type="text" value="" required="required">
+                </div>
+                <div class="control-group">
+                  <label class="control-label" for="_58_INSTANCE_fm_password">
+                    {{loginData.label_password}}
+                  </label>
+                  <input class="field" id="_58_INSTANCE_fm_password" name="_58_INSTANCE_fm_password" type="password" value="" required="required" aria-hidden="true" autocomplete="new-password">
+                </div>
+              </div>
+            </fieldset>
+
+            <div id="modal-buttons-container">
+              <button class="btn btn-default" data-dismiss="modal" type="button">{{loginData.label_cancel_btn}}</button>
+              <button class="btn btn-primary" ng-click="clearBrowserSession()" type="submit">{{loginData.label_signin_btn}}</button>
+            </div>
+          </form>
+
+        </div>
+        
+        <div id="login-links-container">
+          <a href="{{langShort}}/forgot-password/" target="_self">{{loginData.links.forgot_password.label}}</a>
+          <a href="{{langShort}}/c/portal/verify_email_address" target="_self">{{loginData.links.resend_activation_email.label}}</a>
+          <a href="{{langShort}}/self-enroll/" target="_self">{{loginData.links.redeem_seat_token.label}}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="hidden">
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_58_  portlet-static portlet-static-end portlet-login " id="p_p_id_58_INSTANCE_fm_" >
+		<span id="p_58_INSTANCE_fm"></span>
+
+
+
+	
+	
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+
+		
+
+		
+			
+				
+
+<section class="portlet" id="portlet_58_INSTANCE_fm">
+	<header class="portlet-topper">
+		<h2>
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+		<span class=""
+			
+				onmouseover="Liferay.Portal.ToolTip.show(this, 'Sign\x20In')"
+			
+		>
+			
+				
+				
+					
+	
+		
+		
+			
+				
+					
+						
+							<img id="ivtm_null_null" src="https://www.netacad.com/netacad-public-theme/images/spacer.png"  alt="" style="background-image: url('https://www.netacad.com/sprite/html/icons/_sprite.png'); background-position: 50% -592px; background-repeat: no-repeat; height: 16px; width: 16px;" />
+						
+						
+					
+				
+				
+			
+		
+	
+
+	
+		
+		
+			<span class="taglib-text hide-accessible">Sign In</span>
+		
+	
+
+				
+			
+		</span>
+	
+
+
+
+
+
+		</h1>
+
+		<menu class="portlet-topper-toolbar" id="portlet-topper-toolbar_58_INSTANCE_fm" type="toolbar">
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+		
+
+		
+
+		
+
+		
+
+		
+
+		
+	
+
+					</menu>
+	</header>
+
+	<div class="portlet-content">
+		
+					<div class=" portlet-content-container" style="">
+						
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
+
+				
+					
+					
+						
+
+
+	
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+		
+
+		
+			
+		
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form action="https://www.netacad.com/login?p_p_id=58_INSTANCE_fm&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;_58_INSTANCE_fm_struts_action=%2Flogin%2Flogin" class="form sign-in-form "  id="_58_INSTANCE_fm_fm" method="post" name="_58_INSTANCE_fm_fm" autocomplete="on" >
+	
+
+	<input name="_58_INSTANCE_fm_formDate" type="hidden" value="1550022638937" />
+			
+
+			
+				
+				
+			
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<fieldset class="fieldset "  >
+	
+
+	<div class="">
+
+				
+
+				
+
+				<span id="_58_INSTANCE_fm_passwordCapsLockSpan" style="display: none;">Caps Lock is on.</span>
+
+				
+			</div></fieldset>
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="button-holder "  >
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button class="btn  btn-primary"    type='submit'  >
+	
+
+	Sign In
+
+	
+</button>
+
+
+			</div>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+</form>
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="navigation">
+		<ul class="taglib-icon-list unstyled">
+
+		
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<li class="" role="presentation">
+			
+				
+					<a href="https&#x3a;&#x2f;&#x2f;www&#x2e;netacad&#x2e;com&#x2f;login&#x3f;p_p_id&#x3d;58_INSTANCE_fm&#x26;p_p_lifecycle&#x3d;0&#x26;p_p_state&#x3d;normal&#x26;p_p_mode&#x3d;view&#x26;_58_INSTANCE_fm_struts_action&#x3d;&#x25;2Flogin&#x25;2Fforgot_password" class=" taglib-icon" id="_58_INSTANCE_fm_tbsm_null_null" role="menuitem" >
+						
+	
+		
+		
+			
+				
+					
+						
+							<img id="tbsm_null_null" src="https://www.netacad.com/netacad-public-theme/images/spacer.png"  alt="" style="background-image: url('https://www.netacad.com/netacad-public-theme/sprite/images/common/_sprite.png'); background-position: 50% -785px; background-repeat: no-repeat; height: 16px; width: 16px;" />
+						
+						
+					
+				
+				
+			
+		
+	
+
+	
+		
+		
+			<span class="taglib-text ">Forgot Password</span>
+		
+	
+
+					</a>
+				
+				
+			
+		</li>
+	
+	
+	
+
+
+
+
+
+	
+
+
+
+		
+            	
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<li class="" role="presentation">
+			
+				
+					<a href="https&#x3a;&#x2f;&#x2f;www&#x2e;netacad&#x2e;com&#x2f;forgot-screen-name" class=" taglib-icon" id="_58_INSTANCE_fm_kunf_null_null" role="menuitem" >
+						
+	
+		
+		
+			
+				
+					
+						
+							<img id="kunf_null_null" src="https://www.netacad.com/netacad-public-theme/images/spacer.png"  alt="" style="background-image: url('https://www.netacad.com/netacad-public-theme/sprite/images/common/_sprite.png'); background-position: 50% -785px; background-repeat: no-repeat; height: 16px; width: 16px;" />
+						
+						
+					
+				
+				
+			
+		
+	
+
+	
+		
+		
+			<span class="taglib-text ">Forgot Screen Name</span>
+		
+	
+
+					</a>
+				
+				
+			
+		</li>
+	
+	
+	
+
+
+
+
+
+	
+
+			
+		
+	</ul>
+	</div>
+
+
+
+
+		
+		
+		
+            <script type="text/javascript">
+                var fm = document.getElementById('_58_INSTANCE_fm_fm');
+                fm.onsubmit = function() {
+                    document.cookie = "isExpress=true";
+                }
+            </script>
+        
+	
+
+
+<style>
+	.portlet-login .alert {
+	    background: none;
+	    border: medium none;
+	    margin-bottom: 5px;
+	    padding: 1px;
+	}
+</style>
+	
+
+					
+				
+			
+		
+	
+	
+
+
+
+	</div>
+
+					</div>
+				
+	</div>
+</section>
+			
+			
+		
+	
+
+
+	
+
+
+
+
+
+		
+	</div>
+
+
+
+
+</div>
+				 	        <span ng-if="enabledFooterNavigation">
+        <ng-include src="'/netacad-public-theme/js/app/shared/templates/footer.html?t=190130204612.1'"></ng-include>
+				</span>
+     </div>
+</div>
+<script type="text/javascript">
+	var captchaInvisibleUse = false;
+	var captchaPublicKey = ""; 
+</script>
+
+<script type="text/javascript">
+function navCountry(coutryUrl){
+	window.location.href=coutryUrl;
+}
+
+$( document ).ready(function() {
+   $('a').each(function() {
+		  var a = new RegExp('/' + window.location.host + '/');
+		  if (a.test(this.href)) {
+			$(this).attr('target','_self');
+		  }
+	});
+});
+$("#countryList").change(function() {
+  window.location.href=$(this).val();
+});
+</script>
+
+
+
+
+
+
+</body>
+
+      <script type="text/javascript">var isCDA_France = false;</script>
+</html>
+
