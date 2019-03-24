@@ -6,8 +6,8 @@ headers = {     # Haeders ensure the site doest flag the requesr as coming from 
 }
 
 login_data = {    # This is the login data to be passed in the login form
-    '_58_INSTANCE_fm_login': 'lelerukjaymoh@gmail.com',
-    '_58_INSTANCE_fm_password': 'Jay17kish05',
+    '_58_INSTANCE_fm_login': 'denispeterson96@gmai',
+    '_58_INSTANCE_fm_password': 'Dennis537301*',
 }
 
 with requests.Session() as s:

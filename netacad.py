@@ -9,8 +9,8 @@ headers = {
 br = RoboBrowser()
 br.open('https://www.netacad.com/login/')
 form = br.get_form()
-form['_58_INSTANCE_fm_login'] = 'lelerukjaymoh@gmail.com'
-form['_58_INSTANCE_fm_password'] = 'Jay17kish05'
+form['_58_INSTANCE_fm_login'] = 'denispeterson96@gmail.com'
+form['_58_INSTANCE_fm_password'] = 'Dennis537301*'
 br.submit_form(form, headers=headers)
 
 src = str(br.parsed())
